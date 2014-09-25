@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>serious BIZ</title>
+  <link rel="icon" type="image/png" href="images/other/Tray_48.png">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div id="tint"></div>
+  <div class="container">
+    <%= yield %>
+  </div>
+
+</body>
+<footer>
+  <em>All iamges and assets courtesy of Riot Games, Inc. All rights reserved. League of Legends and Riot Games are trademarks, service marks, or registered trademarks of Riot Games, Inc. &copy serious Biz v.1.0.0</em>
+</footer>
+</html>

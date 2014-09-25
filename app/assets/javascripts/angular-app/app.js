@@ -1,0 +1,1 @@
+var ang = angular.module('SeriousBizApp', ['ngResource', 'ngRoute', 'ngAnimate', 'Filters', 'ui.bootstrap']);
