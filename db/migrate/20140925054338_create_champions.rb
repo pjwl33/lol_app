@@ -1,6 +1,6 @@
-class CreateChampipons < ActiveRecord::Migration
+class CreateChampions < ActiveRecord::Migration
   def change
-    create_table :champipons do |t|
+    create_table :champions do |t|
       t.string  "name"
       t.string  "title"
       t.integer "key"
