@@ -1,3 +1,3 @@
 ang.directive('navBar', function(){
-  return { restrict: 'E', templateUrl: '/assets/javascripts/angular-app/views/partials/navBar.html' };
+  return { restrict: 'E', templateUrl: 'ang-views/partials/navBar.html' };
 });
