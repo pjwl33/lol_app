@@ -1,0 +1,45 @@
+<nav-bar></nav-bar>
+
+<div class="row" style="margin-bottom: 55px;">
+  <div ng-repeat="tc in teamComps" class="col-md-2">
+    <center><h1 ng-class="{'active': showTeam == tc.abbr, 'clickable': true}" ng-click="showTeamComp(tc.abbr)" style="font-size:16pt;">{{tc.name | uppercase}}</h1></center>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col-md-2"><h3>Kyomi the Fox</h3></th>
+      <th class="col-md-2"><h3>SuitXUp</h3></th>
+      <th class="col-md-2"><h3>DJ SojuTIME</h3></th>
+      <th class="col-md-2"><h3>SlyDynamo</h3></th>
+      <th class="col-md-2"><h3>YellowHappy</h3></th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="tc in teamComps" ng-if="showTeam == tc.abbr">
+    <tr class="champs">
+      <td class="col-md-2">
+        <img ng-repeat="kfc in tc.kyomiChamps" ng-src="/images/champions/{{kfc}}_{{num}}.jpg" >
+      </td>
+      <td class="col-md-2">
+        <img ng-repeat="suc in tc.suitChamps" ng-src="/images/champions/{{suc}}_{{num}}.jpg" >
+      </td>
+      <td class="col-md-2">
+        <img ng-repeat="djc in tc.sojuChamps" ng-src="/images/champions/{{djc}}_{{num}}.jpg" >
+      </td>
+      <td class="col-md-2">
+        <img ng-repeat="slc in tc.slyChamps" ng-src="/images/champions/{{slc}}_{{num}}.jpg" >
+      </td>
+      <td class="col-md-2">
+        <img ng-repeat="yhc in tc.yellowChamps" ng-src="/assets/images/champions/{{yhc}}_{{num}}.jpg" ng-hide="yhc == 'Rammus'">
+        <img ng-repeat="yhc in tc.yellowChamps" ng-src="/assets/images/champions/{{yhc}}_5.jpg" ng-show="yhc == 'Rammus'">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<center class="row" style="margin-top:55px;">
+  <h4>
+    <a href="http://leagueoflegends.wikia.com/wiki/User_blog:Andrew.heo1/Notable_Team_Compositions" target="_blank">Notable Team Comps by Andrew.heo1</a>
+  </h4>
+</center>

@@ -1,0 +1,50 @@
+<nav-bar></nav-bar>
+
+<div class="row" style="margin-bottom: 55px;">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <center><h1 ng-class="{'active': win, 'clickable': true}" ng-click="showPicks('win')">Best Win %</h1></center>
+  </div>
+  <div class="col-md-5">
+    <center><h1 ng-class="{'active': play, 'clickable': true}" ng-click="showPicks('played')">Most Played</h1></center>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+<table class="table" ng-if="picks == 'win'" ng-controller="ComfortWinCtrl">
+  <thead>
+    <tr>
+      <th class="col-md-2"><h3>Kyomi the Fox</h3></th>
+      <th class="col-md-2"><h3>SuitXUp</h3></th>
+      <th class="col-md-2"><h3>DJ SojuTIME</h3></th>
+      <th class="col-md-2"><h3>SlyDynamo</h3></th>
+      <th class="col-md-2"><h3>YellowHappy</h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="champs">
+      <td ng-repeat="wp in winPicks">
+        <img ng-repeat="w in wp.win" ng-src="/assets/images/champions/{{w}}_{{picNum}}.jpg" ng-mouseover="changePic()">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table" ng-if="picks == 'played'" ng-controller="ComfortPlayedCtrl">
+  <thead>
+    <tr>
+      <th class="col-md-2"><h3>Kyomi the Fox</h3></th>
+      <th class="col-md-2"><h3>SuitXUp</h3></th>
+      <th class="col-md-2"><h3>DJ SojuTIME</h3></th>
+      <th class="col-md-2"><h3>SlyDynamo</h3></th>
+      <th class="col-md-2"><h3>YellowHappy</h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="champs">
+      <td ng-repeat="pp in playPicks">
+        <img ng-repeat="p in pp.played" ng-src="/assets/images/champions/{{p}}_{{picNum}}.jpg" ng-mouseover="changePic()">
+      </td>
+    </tr>
+  </tbody>
+</table>

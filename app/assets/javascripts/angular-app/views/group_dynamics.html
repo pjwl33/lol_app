@@ -1,0 +1,54 @@
+<nav-bar></nav-bar>
+
+<center class="row group-dynamics">
+  <div class="col-md-1"></div>
+  <div class="col-md-5 dyno-info">
+    <h1 style="margin-bottom:15px;">Positives</h1>
+    <ul>
+      <li><i class="fa fa-thumbs-up"></i> Strong with Assassin Comps</li>
+      <li><i class="fa fa-thumbs-up"></i> Strong with Wombo Comps</li>
+      <li><i class="fa fa-thumbs-up"></i> Strong with Top Lane Split Push Comps</li>
+      <li><i class="fa fa-thumbs-up"></i> Strong with Protect The Shin Comps</li>
+      <li><i class="fa fa-thumbs-up"></i> Good Mid-Late Ward Coverage</li>
+      <li><i class="fa fa-thumbs-up"></i> Good Shot Calling</li>
+    </ul>
+  </div>
+
+  <div class="col-md-5 dyno-info">
+    <h1 style="margin-bottom:15px;">Improvements</h1>
+    <ul>
+      <li><i class="fa fa-thumbs-down"></i> Weak to Other Wombo Comps <em>(need better spacing)</em></li>
+      <li><i class="fa fa-thumbs-down"></i> Weak to Heavy CC Tanks <em>(need peels/itemization/ban)</em></li>
+      <li><i class="fa fa-thumbs-down"></i> Weak to Strong Jungle Pressure Bot/Top Lane <em>(need earlier wards/counter ganks)</em></li>
+      <li><i class="fa fa-thumbs-down"></i> Weak to Strong Bot Laners <em>(need better synergy/practice - we talkin' 'bout Practice!)</em></li>
+      <li><i class="fa fa-thumbs-down"></i> Could use Better Target Calling during Team Fights</li>
+    </ul>
+  </div>
+  <div class="col-md-1"></div>
+</center>
+
+<table class="table group-dynamics" style="margin-top: 100px;">
+  <thead>
+    <tr>
+      <th class="col-md-2"><h3>Kyomi the Fox</h3></th>
+      <th class="col-md-2"><h3>SuitXUp</h3></th>
+      <th class="col-md-2"><h3>DJ SojuTIME</h3></th>
+      <th class="col-md-2"><h3>SlyDynamo</h3></th>
+      <th class="col-md-2"><h3>YellowHappy</h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td ng-repeat="gD in groupDynamics" class="col-md-2">
+        <h4 style="color: #428bca;">Best Roles</h4>
+        <li ng-repeat="s in gD.strengths">{{s}}</li>
+      </td>
+    </tr>
+    <tr>
+      <td ng-repeat="gD in groupDynamics" class="col-md-2">
+        <h4 style="color: #FF3366;">Weaknesses</h4>
+        <li ng-repeat="w in gD.weaknesses">{{w}}</li>
+      </td>
+    </tr>
+  </tbody>
+</table>
