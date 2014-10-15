@@ -4,11 +4,12 @@ ang.controller('ComfortWinCtrl', function($scope, $animate, $interval){
   // $interval(changePic, 10000);
 
   $scope.winPicks = [
-  {summoner: "Kyomi the Fox", win: ['Ahri', 'Sona', 'MissFortune']},
+  {summoner: "Yunah", win: ['Ahri', 'Sona', 'MissFortune']},
   {summoner: "SuitXUp", win: ['XinZhao', 'Wukong', 'Jax']},
-  {summoner: "DJ SojuTIME", win: ['Darius', 'Sivir', 'Udyr']},
+  {summoner: "DJ SojuTIME", win: ['Darius', 'Morgana', 'Lulu']},
   {summoner: "SlyDynamo", win: ['Nasus', 'Kassadin', 'Caitlyn']},
   {summoner: "YellowHappy", win: ['Sivir', 'Nami', 'Yorick']},
+  {summoner: "skguppy", win: ['Sivir', 'Fizz', 'Amumu']}
   ];
 
   function changePic(){

@@ -4,11 +4,12 @@ ang.controller('ComfortPlayedCtrl', function($scope, $animate, $interval){
   // $interval(changePic, 10000);
 
   $scope.playPicks = [
-    {summoner: "Kyomi the Fox", played: ['Ahri', 'MissFortune', 'Nami']},
+    {summoner: "Yunah", played: ['Ahri', 'MissFortune', 'Nami']},
     {summoner: "SuitXUp", played: ['Jax', 'Wukong', 'Shyvana']},
-    {summoner: "WHblackITE", played: ['Morgana', 'Thresh', 'Sivir']},
+    {summoner: "WHblackITE", played: ['Morgana', 'Thresh', 'Lulu']},
     {summoner: "SlyDynamo", played: ['Yasuo', 'Caitlyn', 'LeeSin']},
-    {summoner: "YellowHappy", played: ['Thresh', 'Nami', 'Caitlyn']}
+    {summoner: "YellowHappy", played: ['Thresh', 'Nami', 'Caitlyn']},
+    {summoner: "skguppy", played: ['Sivir', 'Amumu', 'Fizz']}
   ];
 
   function changePic(){

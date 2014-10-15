@@ -9,11 +9,12 @@
 <table class="table">
   <thead>
     <tr>
-      <th class="col-md-2"><h3>Kyomi the Fox</h3></th>
+      <th class="col-md-2"><h3>Yunah</h3></th>
       <th class="col-md-2"><h3>SuitXUp</h3></th>
       <th class="col-md-2"><h3>DJ SojuTIME</h3></th>
       <th class="col-md-2"><h3>SlyDynamo</h3></th>
       <th class="col-md-2"><h3>YellowHappy</h3></th>
+      <th class="col-md-2"><h3>skguppy</h3></th>
     </tr>
   </thead>
   <tbody ng-repeat="tc in teamComps" ng-if="showTeam == tc.abbr">
@@ -33,6 +34,9 @@
       <td class="col-md-2">
         <img ng-repeat="yhc in tc.yellowChamps" ng-src="/images/champions/{{yhc}}_{{num}}.jpg" ng-hide="yhc == 'Rammus'">
         <img ng-repeat="yhc in tc.yellowChamps" ng-src="/images/champions/{{yhc}}_5.jpg" ng-show="yhc == 'Rammus'">
+      </td>
+      <td class="col-md-2">
+        <img ng-repeat="skc in tc.skgChamps" ng-src="/images/champions/{{skc}}_{{num}}.jpg" >
       </td>
     </tr>
   </tbody>
