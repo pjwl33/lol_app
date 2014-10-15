@@ -1,14 +1,12 @@
 <nav-bar></nav-bar>
 
 <div class="row" style="margin-bottom: 55px;">
-  <div class="col-md-1"></div>
-  <div class="col-md-5">
+  <div class="col-md-6">
     <center><h1 ng-class="{'active': win, 'clickable': true}" ng-click="showPicks('win')">Best Win %</h1></center>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-6">
     <center><h1 ng-class="{'active': play, 'clickable': true}" ng-click="showPicks('played')">Most Played</h1></center>
   </div>
-  <div class="col-md-1"></div>
 </div>
 
 <table class="table" ng-if="picks == 'win'" ng-controller="ComfortWinCtrl">
@@ -19,6 +17,7 @@
       <th class="col-md-2"><h3>DJ SojuTIME</h3></th>
       <th class="col-md-2"><h3>SlyDynamo</h3></th>
       <th class="col-md-2"><h3>YellowHappy</h3></th>
+      <th class="col-md-2"><h3>skguppy</h3></th>
     </tr>
   </thead>
   <tbody>
@@ -38,6 +37,7 @@
       <th class="col-md-2"><h3>DJ SojuTIME</h3></th>
       <th class="col-md-2"><h3>SlyDynamo</h3></th>
       <th class="col-md-2"><h3>YellowHappy</h3></th>
+      <th class="col-md-2"><h3>skguppy</h3></th>
     </tr>
   </thead>
   <tbody>
