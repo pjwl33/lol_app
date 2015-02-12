@@ -1,8 +1,1 @@
-TODO STILL
-
-- deploy
-- add image changer on mouse over (fade?)
-- sync with RIOT API to get match data and analysis, as well as most played and win% champs
-- match history for the team
-- actual tier level for Team
-- add the champ picks music with start/stop options
+www.lolseriousbiz.com
