@@ -12,18 +12,18 @@
 <table class="table" ng-if="picks == 'win'" ng-controller="ComfortWinCtrl">
   <thead>
     <tr>
-      <th class="col-md-2"><h3>Yunah</h3></th>
+      <th class="col-md-2"><h3>skPrismo</h3></th>
       <th class="col-md-2"><h3>SuitXUp</h3></th>
-      <th class="col-md-2"><h3>DJ SojuTIME</h3></th>
+      <th class="col-md-2"><h3>skBMO</h3></th>
       <th class="col-md-2"><h3>SlyDynamo</h3></th>
       <th class="col-md-2"><h3>YellowHappy</h3></th>
-      <th class="col-md-2"><h3>skguppy</h3></th>
+      <th class="col-md-2"><h3>skSkycon</h3></th>
     </tr>
   </thead>
   <tbody>
     <tr class="champs">
       <td ng-repeat="wp in winPicks">
-        <img ng-repeat="w in wp.win" ng-src="/images/champions/{{w}}_{{picNum}}.jpg" ng-mouseover="changePic()">
+        <img ng-repeat="w in wp.win" ng-src="/images/champions/{{w}}_{{picNum}}.jpg">
       </td>
     </tr>
   </tbody>
@@ -32,18 +32,18 @@
 <table class="table" ng-if="picks == 'played'" ng-controller="ComfortPlayedCtrl">
   <thead>
     <tr>
-      <th class="col-md-2"><h3>Yunah</h3></th>
+      <th class="col-md-2"><h3>skPrismo</h3></th>
       <th class="col-md-2"><h3>SuitXUp</h3></th>
-      <th class="col-md-2"><h3>DJ SojuTIME</h3></th>
+      <th class="col-md-2"><h3>skBMO</h3></th>
       <th class="col-md-2"><h3>SlyDynamo</h3></th>
       <th class="col-md-2"><h3>YellowHappy</h3></th>
-      <th class="col-md-2"><h3>skguppy</h3></th>
+      <th class="col-md-2"><h3>skSkycon</h3></th>
     </tr>
   </thead>
   <tbody>
     <tr class="champs">
       <td ng-repeat="pp in playPicks">
-        <img ng-repeat="p in pp.played" ng-src="/images/champions/{{p}}_{{picNum}}.jpg" ng-mouseover="changePic()">
+        <img ng-repeat="p in pp.played" ng-src="/images/champions/{{p}}_{{picNum}}.jpg">
       </td>
     </tr>
   </tbody>

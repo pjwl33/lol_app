@@ -1,22 +1,14 @@
 ang.controller('ComfortWinCtrl', function($scope, $animate, $interval){
   $scope.currentSlide = 0;
   $scope.picNum = 0;
-  // $interval(changePic, 10000);
 
   $scope.winPicks = [
-  {summoner: "Yunah", win: ['Ahri', 'Sona', 'MissFortune']},
-  {summoner: "SuitXUp", win: ['XinZhao', 'Wukong', 'Jax']},
-  {summoner: "DJ SojuTIME", win: ['Darius', 'Morgana', 'Lulu']},
-  {summoner: "SlyDynamo", win: ['Nasus', 'Kassadin', 'Caitlyn']},
-  {summoner: "YellowHappy", win: ['Sivir', 'Nami', 'Yorick']},
-  {summoner: "skguppy", win: ['Sivir', 'Fizz', 'Amumu']}
+  {summoner: "skPrismo", win: ['Amumu', 'Sejuani', 'Vi']},
+  {summoner: "SuitXUp", win: ['Jinx', 'Zed', 'Pantheon']},
+  {summoner: "skBMO", win: ['Nautilus', 'Morgana', 'Gnar']},
+  {summoner: "SlyDynamo", win: ['Vi', 'JarvanIV', 'Lissandra']},
+  {summoner: "YellowHappy", win: ['Cassiopeia', 'Nami', 'Vayne']},
+  {summoner: "skSkycon", win: ['Heimerdinger', 'Annie', 'Trundle']}
   ];
 
-  function changePic(){
-    if ($scope.picNum === 2) {
-      $scope.picNum = 0;
-    } else {
-      $scope.picNum += 1;
-    }
-  }
 });

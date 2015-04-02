@@ -9,34 +9,33 @@
 <table class="table">
   <thead>
     <tr>
-      <th class="col-md-2"><h3>Yunah</h3></th>
+      <th class="col-md-2"><h3>skPrismo</h3></th>
       <th class="col-md-2"><h3>SuitXUp</h3></th>
-      <th class="col-md-2"><h3>DJ SojuTIME</h3></th>
+      <th class="col-md-2"><h3>skBMO</h3></th>
       <th class="col-md-2"><h3>SlyDynamo</h3></th>
       <th class="col-md-2"><h3>YellowHappy</h3></th>
-      <th class="col-md-2"><h3>skguppy</h3></th>
+      <th class="col-md-2"><h3>skSkycon</h3></th>
     </tr>
   </thead>
   <tbody ng-repeat="tc in teamComps" ng-if="showTeam == tc.abbr">
     <tr class="champs">
       <td class="col-md-2">
-        <img ng-repeat="kfc in tc.kyomiChamps" ng-src="/images/champions/{{kfc}}_{{num}}.jpg" >
+        <img ng-repeat="p1c in tc.p1Champs" ng-src="/images/champions/{{p1c}}_{{num}}.jpg" >
       </td>
       <td class="col-md-2">
-        <img ng-repeat="suc in tc.suitChamps" ng-src="/images/champions/{{suc}}_{{num}}.jpg" >
+        <img ng-repeat="p2c in tc.p2Champs" ng-src="/images/champions/{{p2c}}_{{num}}.jpg" >
       </td>
       <td class="col-md-2">
-        <img ng-repeat="djc in tc.sojuChamps" ng-src="/images/champions/{{djc}}_{{num}}.jpg" >
+        <img ng-repeat="p3c in tc.p3Champs" ng-src="/images/champions/{{p3c}}_{{num}}.jpg" >
       </td>
       <td class="col-md-2">
-        <img ng-repeat="slc in tc.slyChamps" ng-src="/images/champions/{{slc}}_{{num}}.jpg" >
+        <img ng-repeat="p4c in tc.p4Champs" ng-src="/images/champions/{{p4c}}_{{num}}.jpg" >
       </td>
       <td class="col-md-2">
-        <img ng-repeat="yhc in tc.yellowChamps" ng-src="/images/champions/{{yhc}}_{{num}}.jpg" ng-hide="yhc == 'Rammus'">
-        <img ng-repeat="yhc in tc.yellowChamps" ng-src="/images/champions/{{yhc}}_5.jpg" ng-show="yhc == 'Rammus'">
+        <img ng-repeat="p5c in tc.p5Champs" ng-src="/images/champions/{{p5c}}_{{num}}.jpg" >
       </td>
       <td class="col-md-2">
-        <img ng-repeat="skc in tc.skgChamps" ng-src="/images/champions/{{skc}}_{{num}}.jpg" >
+        <img ng-repeat="p6c in tc.p6Champs" ng-src="/images/champions/{{p6c}}_{{num}}.jpg" >
       </td>
     </tr>
   </tbody>
