@@ -34,7 +34,7 @@ ang.controller('HomeCtrl', function($scope, $animate, $http, $interval){
 
   $scope.teamComps = [
   {name: "WOMBOLOGY", abbr: "wombo", p1Champs: ['Amumu', 'Sejuani'], p2Champs: ['Graves', 'Jinx'], p3Champs: ['Nautilus', 'Malphite', 'Lissandra'], p4Champs: ['Viktor', 'Vi', 'JarvanIV'], ph5Champs: ['Thresh', 'Nami', 'Blitzcrank'], p6Champs: ['Annie', 'Kalista', 'Heimerdinger']},
-  {name: "JuggerMaw/ADC", abbr: "protect", p1Champs: ['Amumu', 'Sejuani', 'Morgana'], p2Champs: ['Jinx', 'Graves'], p3Champs: ['Lulu', 'Malphite', 'Nautilus'], p4Champs: ['Zed', 'Viktor', 'Lissandra'], ph5Champs: ['Thresh', 'Janna', 'Nami'], p6Champs: ['Kalista']},
+  {name: "JuggerMaw/ADC", abbr: "protect", p1Champs: ['Amumu', 'Sejuani', 'Morgana'], p2Champs: ['Jinx', 'Graves'], p3Champs: ['Lulu', 'Malphite', 'Nautilus'], p4Champs: ['Zed', 'Viktor', 'Lissandra'], p5Champs: ['Thresh', 'Janna', 'Nami'], p6Champs: ['Kalista']},
   // {name: "Freebies", abbr: "freebies", p1Champs: ['Ahri', 'Akali', 'Lucian'], p2Champs: ['XinZhao', 'JarvanIV', 'Pantheon'], p3Champs: ['Darius', 'Warwick', 'Blitzcrank'], p4Champs: ['Fizz', 'Talon', 'Lucian'], ph5Champs: ['Thresh', 'Blitzcrank'], p6Champs: ['Fizz', 'Amumu', 'Sivir']},
   // {name: "Wanna See a Hat-Trick?", abbr: "hattrick", p1Champs: ['Caitlyn', 'Orianna', 'Karma', 'Sona'], p2Champs: ['Wukong', 'Khazix'], p3Champs: ['Lulu', 'DrMundo', 'Nidalee'], p4Champs: ['Caitlyn', 'Khazix', 'Zed'], ph5Champs: ['Ziggs', 'Orianna', 'Nami', 'Caitlyn'], p6Champs: ['Annie', 'Amumu']},
   // {name: "I'm a survivor", abbr: "survivor", p1Champs: ['Anivia'], p2Champs: ['Aatrox'], p3Champs: ['Alistar'], p4Champs: ['Sion'], ph5Champs: ['Zilean'], p6Champs: ['Kayle']},
