@@ -46,7 +46,6 @@ ang.controller('HomeCtrl', function($scope, $animate, $http, $interval){
   {name: "2 Fast 2 Furious", abbr: "fast", kyomiChamps: ['Orianna', 'Karma'], suitChamps: ['XinZhao', 'Vi', 'Wukong'], sojuChamps: ['Lulu', 'Malphite', 'DrMundo'], slyChamps: ['Talon', 'Lucian'], yellowChamps: ['Sivir', 'Nami'], skgChamps: ['Fizz', 'Amumu', 'Sivir']},
   {name: "Freebies", abbr: "freebies", kyomiChamps: ['Ahri', 'Akali', 'Lucian'], suitChamps: ['XinZhao', 'JarvanIV', 'Pantheon'], sojuChamps: ['Darius', 'Warwick', 'Blitzcrank'], slyChamps: ['Fizz', 'Talon', 'Lucian'], yellowChamps: ['Thresh', 'Blitzcrank'], skgChamps: ['Fizz', 'Amumu', 'Sivir']},
   {name: "Wanna See a Hat-Trick?", abbr: "hattrick", kyomiChamps: ['Caitlyn', 'Orianna', 'Karma', 'Sona'], suitChamps: ['Wukong', 'Khazix'], sojuChamps: ['Lulu', 'DrMundo', 'Nidalee'], slyChamps: ['Caitlyn', 'Khazix', 'Zed'], yellowChamps: ['Ziggs', 'Orianna', 'Nami', 'Caitlyn'], skgChamps: ['Annie', 'Amumu']},
-  {name: "Mochis for lunch", abbr: "mochis", kyomiChamps: ['Akali'], suitChamps: ['Shen'], sojuChamps: ['Kennen'], slyChamps: ['Zed'], yellowChamps: ['Rammus'], skgChamps: ['Fizz']},
   {name: "I'm a survivor", abbr: "survivor", kyomiChamps: ['Anivia'], suitChamps: ['Aatrox'], sojuChamps: ['Alistar'], slyChamps: ['Sion'], yellowChamps: ['Zilean'], skgChamps: ['Kayle']},
   ];
 
